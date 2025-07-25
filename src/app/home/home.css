@@ -1,0 +1,90 @@
+/* Base Layout */
+.intro-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+/* Image Section */
+.image-section {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.8;
+  padding-right: 330px;
+}
+
+/* Fade-In Animation */
+.fade-in-left {
+  animation: fadeLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-in-right {
+  animation: fadeRight 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Layout for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .text-section {
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 80vw;
+  }
+}
