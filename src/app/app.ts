@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected title = 'portfolio';
+  goTo(path: string) {
+    window.location.href = path;
+  }
+
 }

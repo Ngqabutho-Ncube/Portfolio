@@ -1,0 +1,18 @@
+
+
+/* Style a semantic section */
+section {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Style headings and paragraphs directly */
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: black;
+}

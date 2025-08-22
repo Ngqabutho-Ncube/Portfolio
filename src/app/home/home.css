@@ -14,7 +14,7 @@
 
 /* Image Section */
 .image-section {
-  flex: 0 0 40%;
+  flex: 0 0 25%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -30,11 +30,11 @@
 /* Text Section */
 .text-section {
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   font-family: 'Segoe UI', sans-serif;
   color: #222;
   line-height: 1.8;
-  padding-right: 330px;
+  padding-right: 2px;
 }
 
 /* Fade-In Animation */
